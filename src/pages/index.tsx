@@ -5,7 +5,7 @@ function IndexPage() {
   return (
     <>
       <Head>
-        <title>匯出出貨 Excel 檔案</title>
+        <title>匯出出貨 Excel 檔案 (SHOPLINE)</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <IndexPageContent />

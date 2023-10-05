@@ -74,6 +74,8 @@ function IndexPageContent() {
       return
     }
 
+    console.log('ordersJson', ordersJson)
+    console.log('bundleItemMap', bundleItemMap)
     const dataToExport = { ordersJson, bundleItemMap, orderDate }
     if (target.includes('seven-eleven')) {
       exportToSevenElevenFormat(dataToExport)
@@ -90,7 +92,7 @@ function IndexPageContent() {
     <div className={styles.outerContainer}>
       <div className={styles.innerContainer}>
         <div className={styles.section}>
-          <div className={styles.heading}>匯出出貨 Excel 檔案</div>
+          <div className={styles.heading}>匯出出貨 Excel 檔案 (SHOPLINE)</div>
           <div className={styles.inputRow}>
             <label htmlFor="orders-input">第一步：選擇原始訂單 Excel 檔案</label>
             <input
